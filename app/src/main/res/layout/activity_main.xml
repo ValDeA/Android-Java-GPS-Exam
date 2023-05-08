@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+      android:id="@+id/show"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Show Data"
+      android:layout_marginTop="32dp"
+      app:layout_constraintEnd_toStartOf="@+id/clear"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+      android:id="@+id/clear"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Clear Data"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/stop"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/show"
+      app:layout_constraintTop_toTopOf="@+id/show" />
+
+    <Button
+      android:id="@+id/stop"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Stop Gps"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/clear"
+      app:layout_constraintTop_toTopOf="@+id/show" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
